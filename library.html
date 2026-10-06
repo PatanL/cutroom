@@ -3,27 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The library · cutroom</title>
+  <title>Who pays clippers · cutroom</title>
   <meta name="description" content="Streamers and creators who pay clippers: every program's rate, where to join, and the receipts.">
   <meta name="theme-color" content="#0d0d10">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/library-Cg5apEYW.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/chrome-DOLoKBy8.js">
-  <link rel="modulepreload" crossorigin href="/assets/ui-Dk3q1jcg.js">
+  <script type="module" crossorigin src="/assets/library-BsrjRfXG.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/chrome-CvBQm9er.js">
+  <link rel="modulepreload" crossorigin href="/assets/ui-DG_ZzHCc.js">
   <link rel="modulepreload" crossorigin href="/assets/market-CPOypMFJ.js">
   <link rel="stylesheet" crossorigin href="/assets/chrome-BZiqIjL2.css">
-  <link rel="stylesheet" crossorigin href="/assets/library-DGpPMkJC.css">
+  <link rel="stylesheet" crossorigin href="/assets/library-BsYrvIZn.css">
 </head>
 <body>
 <main>
   <section class="lib-head">
     <div class="wrap">
-      <span class="eyebrow">The library</span>
+      <span class="eyebrow">Who pays</span>
       <h1 class="cap lib-cap">Who pays <span class="hl">clippers.</span></h1>
       <p class="lede">Every streamer and creator we've found paying people to clip them, with the rate, where to join, and the receipts: their own post, the campaign page, the Discord's member count on the day we checked. Rooms can only clip sources on this list.</p>
       <dl class="lib-stats" id="lib-stats"></dl>
+      <div class="lib-glance">
+        <div class="mkt-grid">
+        <div class="panel"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>rate per 1,000 views · campaigns</span></div><div class="panel-body"><div class="hist" id="hist"></div></div></div>
+        <div class="panel"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>where clips can go · campaigns allowing</span></div><div class="panel-body"><div class="plats" id="plats"></div></div></div>
+      </div>
+        <dl class="mkt-stats" id="mkt-stats"></dl>
+      </div>
     </div>
   </section>
   <section class="lib-body">
@@ -53,13 +60,8 @@
   </section>
   <section class="mkt-sec">
     <div class="wrap">
-      <div class="section-head"><div><span class="eyebrow">The market</span><h2 class="h2" style="margin-top:14px">What clipping <em>pays.</em></h2></div>
+      <div class="section-head"><div><span class="eyebrow">The market, in detail</span><h2 class="h2" style="margin-top:14px">Who is paying <em>right now.</em></h2></div>
         <p class="lede" style="max-width:30em" id="mkt-lede"></p></div>
-      <div class="mkt-grid">
-        <div class="panel"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>rate per 1,000 views · campaigns</span></div><div class="panel-body"><div class="hist" id="hist"></div></div></div>
-        <div class="panel"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>where clips can go · campaigns allowing</span></div><div class="panel-body"><div class="plats" id="plats"></div></div></div>
-      </div>
-      <dl class="mkt-stats" id="mkt-stats"></dl>
       <div class="panel" style="margin-top:20px"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>streamer campaigns live now · by money spent</span><span class="tc" id="mkt-n"></span></div>
         <table class="mkt-table"><thead><tr><th>Campaign</th><th>Run by</th><th>Rate</th><th>Spent / budget</th><th>Clippers</th></tr></thead><tbody id="mkt-rows"></tbody></table><button class="show-more" id="mkt-more" type="button" aria-expanded="false">Show more campaigns</button></div>
       <div class="panel" style="margin-top:20px"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>Kick's own rate board · USD per 100K views, paid in USDT</span><span class="tc" id="kick-checked"></span></div>
