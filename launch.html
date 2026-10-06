@@ -9,13 +9,14 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/launch-klKFIHP0.js"></script>
+  <script type="module" crossorigin src="/assets/launch-B67B1a2i.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/chrome-CvBQm9er.js">
-  <link rel="modulepreload" crossorigin href="/assets/ui-CZWpHDQb.js">
-  <link rel="modulepreload" crossorigin href="/assets/market-CPOypMFJ.js">
+  <link rel="modulepreload" crossorigin href="/assets/data-BlHkaDoh.js">
+  <link rel="modulepreload" crossorigin href="/assets/ui-BDX5tL9g.js">
+  <link rel="modulepreload" crossorigin href="/assets/stylereel-C7twS7ZF.js">
   <link rel="stylesheet" crossorigin href="/assets/chrome-BZiqIjL2.css">
-  <link rel="stylesheet" crossorigin href="/assets/launch-xNd0AHNc.css">
-  <link rel="stylesheet" crossorigin href="/assets/home-CthZs3Zf.css">
+  <link rel="stylesheet" crossorigin href="/assets/launch-BdwtUHTO.css">
+  <link rel="stylesheet" crossorigin href="/assets/home-Dnh58O1q.css">
 </head>
 <body>
 <main>
@@ -36,16 +37,16 @@
         </fieldset>
         <fieldset class="part"><legend><span class="pn mono">02</span>Name the room</legend>
           <div class="row2">
-            <div><label class="label" for="name">Channel name</label><input class="input" id="name" maxlength="28" placeholder="Late Night Cuts" autocomplete="off"></div>
-            <div><label class="label" for="ticker">Ticker</label><input class="input mono" id="ticker" maxlength="10" placeholder="LATE" autocomplete="off"></div>
+            <div><label class="label" for="name">Channel name</label><input class="input" id="name" maxlength="28" placeholder="Neon Room" autocomplete="off"></div>
+            <div><label class="label" for="ticker">Ticker</label><input class="input mono" id="ticker" maxlength="10" placeholder="NEON" autocomplete="off"></div>
           </div>
-          <p class="hint">Clip pages work best with a name that says what you'll get, not who it is. Don't use a streamer's name as the channel's name.</p>
+          <p class="hint">The coin's name and ticker. The accounts are named for you (step 4).</p>
         </fieldset>
         <fieldset class="part"><legend><span class="pn mono">03</span>Pick the cut</legend>
           <div class="styles" id="styles"></div>
         </fieldset>
-        <fieldset class="part"><legend><span class="pn mono">04</span>Handles</legend>
-          <p class="part-lede">Claimed when the room goes on air. If one's taken, we'll take the closest free one.</p>
+        <fieldset class="part"><legend><span class="pn mono">04</span>Accounts</legend>
+          <p class="part-lede">cutroom opens and runs the room's accounts, named cutroom + the streamer. Every post credits the streamer on screen and in the caption.</p>
           <div class="hgrid" id="handles"></div>
         </fieldset>
         <fieldset class="part"><legend><span class="pn mono">05</span>Launch</legend>
@@ -58,7 +59,8 @@
       </form>
       <aside class="lpreview">
         <span class="eyebrow">Preview</span>
-        <div class="lp-phone"><div class="phone" id="lp-phone"></div></div>
+        <div class="lp-phone"><div class="phone sp-real" id="lp-phone"></div></div>
+        <p class="mono lp-note" id="lp-note"></p>
         <div id="lp-card"></div>
         <div class="panel math">
           <div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>room math</span><span class="tc">illustrative</span></div>

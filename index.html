@@ -15,13 +15,16 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/index-CU6m2Pys.js"></script>
+  <script type="module" crossorigin src="/assets/index-9r4ns-FP.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/chrome-CvBQm9er.js">
-  <link rel="modulepreload" crossorigin href="/assets/ui-CZWpHDQb.js">
-  <link rel="modulepreload" crossorigin href="/assets/market-CPOypMFJ.js">
-  <link rel="modulepreload" crossorigin href="/assets/portfolio-Cao4qkID.js">
+  <link rel="modulepreload" crossorigin href="/assets/data-BlHkaDoh.js">
+  <link rel="modulepreload" crossorigin href="/assets/ui-BDX5tL9g.js">
+  <link rel="modulepreload" crossorigin href="/assets/aitthumbs-D24p96Uq.js">
+  <link rel="modulepreload" crossorigin href="/assets/cuts-DjLCtbBb.js">
+  <link rel="modulepreload" crossorigin href="/assets/stylereel-C7twS7ZF.js">
+  <link rel="modulepreload" crossorigin href="/assets/avatars-DI9Ef6kN.js">
   <link rel="stylesheet" crossorigin href="/assets/chrome-BZiqIjL2.css">
-  <link rel="stylesheet" crossorigin href="/assets/home-CthZs3Zf.css">
+  <link rel="stylesheet" crossorigin href="/assets/home-Dnh58O1q.css">
 </head>
 <body>
 <main>
@@ -71,26 +74,22 @@
   </section>
 
   <section class="realstrip-sec" style="padding:0 0 40px">
-    <div class="wrap"><a class="realstrip" href="/styles#real">
-      <div class="rs-copy"><span class="eyebrow rec">First real cuts</span><b>3 clips from a real 66-minute stream, made for a paid program.</b>
-        <span class="muted">TJR campaign · $0.75 per 1K views · no AI, no logos, #TJR · see them →</span></div>
+    <div class="wrap"><a class="realstrip" href="#channels">
+      <div class="rs-copy"><span class="eyebrow rec">Real cuts</span><b id="rs-title">Cut from real streams of streamers who pay clippers.</b>
+        <span class="muted" id="rs-sub">Live and from their most-clipped moments · see them →</span></div>
       <div class="rs-thumbs" id="rs-thumbs"></div></a></div>
   </section>
 
-  <section class="toon-sec" id="toon">
-    <div class="wrap toon-grid">
-      <div class="toon-copy reveal">
-        <span class="eyebrow">New cut · Toon</span>
-        <h2 class="h2" style="margin-top:16px">Funny moments,<br><em>redrawn.</em></h2>
-        <ul class="toon-pts">
-          <li><b>The real audio.</b><span class="long"> The streamer's own voice and timing stay untouched. That's where the joke is.</span></li>
-          <li><b>A cartoon on top.</b><span class="long"> Panels drawn from a model sheet of the streamer, cut to the beats of the audio, with lip flaps and impact frames.</span></li>
-          <li><b>The real clip, inset.</b><span class="long"> You always see what actually happened, in the corner.</span></li>
-          <li><b>Labelled AI, with consent.</b><span class="long"> Only for streamers whose program allows AI edits, and always carrying the platform's AI label.</span></li>
-        </ul>
-        <div class="toon-flow mono"><span>transcript</span><i>→</i><span>beats</span><i>→</i><span>model sheet</span><i>→</i><span>panels</span><i>→</i><span>motion</span><i>→</i><span>captions</span></div>
+  <section class="ait-sec" id="ai">
+    <div class="wrap ait-wrap">
+      <div class="ait-head reveal">
+        <div><span class="eyebrow">The AI layer</span>
+          <h2 class="h2" style="margin-top:16px">AI trends, <em>on real creators.</em></h2></div>
+        <p class="lede">The AI formats already pulling millions of views on streamers, with the creators' own reactions. A room adds an AI layer only where the creator's program allows it, and labels it.</p>
       </div>
-      <div class="toon-stage reveal"><div class="phone" id="toon-phone"></div></div>
+      <div class="ait-lead reveal" id="ait-lead"></div>
+      <div class="ait-row" id="ait-row"></div>
+      <p class="ait-note mono">Thumbnails link to the original posts. View counts as checked on the day we found them. <a href="/styles#ai">All trends, with sources →</a></p>
     </div>
   </section>
 
@@ -121,9 +120,10 @@
     <div class="wrap">
       <div class="section-head reveal">
         <div><span class="eyebrow">Real cuts</span><h2 class="h2" style="margin-top:16px">Real streams. <em>Real clips.</em></h2>
-          <p class="lede" style="margin-top:14px;max-width:34em">No mockups here. One was cut by the live room while the stream was still going; the others were cut from a VOD for the streamer's own clipping campaign.</p></div>
+          <p class="lede" style="margin-top:14px;max-width:36em" id="real-lede">No mockups here. Every cut is a real stream from a streamer who pays clippers: some cut by the live room while the stream was still going, the rest from the moments their own viewers clipped most.</p></div>
         <a class="btn btn-ghost" href="/live">Watch the live room →</a>
       </div>
+      <div class="real-who" id="real-who" role="group" aria-label="Streamers"></div>
       <div class="real-grid" id="real-grid"></div>
     </div>
   </section>

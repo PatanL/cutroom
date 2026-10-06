@@ -9,12 +9,14 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/styles-CX028PpD.js"></script>
+  <script type="module" crossorigin src="/assets/styles-3bg17SPY.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/chrome-CvBQm9er.js">
-  <link rel="modulepreload" crossorigin href="/assets/ui-CZWpHDQb.js">
-  <link rel="modulepreload" crossorigin href="/assets/portfolio-Cao4qkID.js">
+  <link rel="modulepreload" crossorigin href="/assets/data-BlHkaDoh.js">
+  <link rel="modulepreload" crossorigin href="/assets/aitthumbs-D24p96Uq.js">
+  <link rel="modulepreload" crossorigin href="/assets/stylereel-C7twS7ZF.js">
+  <link rel="modulepreload" crossorigin href="/assets/cuts-DjLCtbBb.js">
   <link rel="stylesheet" crossorigin href="/assets/chrome-BZiqIjL2.css">
-  <link rel="stylesheet" crossorigin href="/assets/home-CthZs3Zf.css">
+  <link rel="stylesheet" crossorigin href="/assets/home-Dnh58O1q.css">
 </head>
 <body>
 <main>
@@ -40,9 +42,9 @@
     </div>
   </section>
 
-  <section style="padding-top:24px">
+  <section style="padding-top:24px" id="across">
     <div class="wrap">
-      <div class="section-head"><div><span class="eyebrow">Coming next</span><h2 class="h2" style="margin-top:14px">More styles, <em>in the works.</em></h2></div><p class="lede" style="max-width:28em">Previews on demo stills: these styles aren't cut from real streams yet.</p></div>
+      <div class="section-head"><div><span class="eyebrow rec">Any streamer</span><h2 class="h2" style="margin-top:14px">Same room, <em>any stream.</em></h2></div><p class="lede" style="max-width:30em">The moments each streamer's own viewers clipped most, recut by the room. A facecam over a game or a browser gets split, cam on top and the content below; a camera filming the room gets framed on whoever's talking.</p></div>
       <div class="reel-grid" id="reel"></div>
     </div>
   </section>
@@ -109,6 +111,10 @@
   .ait-ex { font-size: 13.5px; text-decoration: none; color: var(--text); } .ait-ex:hover { text-decoration: underline; }
   .ait-r { display: flex; flex-wrap: wrap; gap: 6px; }
   .ait-t { margin-top: auto; font-size: 11.5px; color: var(--text-3); }
+  .ait-thumbs { display: flex; gap: 8px; }
+  .ait-tn { position: relative; flex: 0 0 auto; width: 96px; aspect-ratio: 9 / 16; border-radius: 10px; overflow: hidden; background: var(--track); }
+  .ait-tn img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .ait-tn span { position: absolute; left: 6px; bottom: 5px; font-size: 11px; font-weight: 600; color: var(--yellow); text-shadow: 0 1px 3px #000; }
   .modeled { display: grid; gap: 4px; }
   .modeled a { font-size: 13.5px; text-decoration: none; color: var(--text-2); }
   .modeled a:hover { color: var(--text); text-decoration: underline; }
