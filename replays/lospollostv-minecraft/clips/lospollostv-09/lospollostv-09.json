@@ -1,0 +1,47 @@
+{
+ "id": "lospollostv-09",
+ "program": "Kick Clipping (clipping.net) bounty",
+ "source_url": "https://kick.com/lospollostv",
+ "hook": "LosPollosTV thinks he found diamond in Minecraft \ud83d\ude2d",
+ "post_caption": "oh my god I found diamond... no it's lapis #lospollostv #minecraft #hardcore",
+ "rules_check": {
+  "source": "live Kick stream",
+  "credit_on_screen": true,
+  "no_ai_video": true,
+  "no_botting": true
+ },
+ "duration": 20.0,
+ "timeline": [
+  {
+   "src": [
+    2.86,
+    22.86
+   ],
+   "at": 0.0
+  }
+ ],
+ "render": {
+  "segments": [
+   {
+    "src": [
+     2.86,
+     22.86
+    ],
+    "cam": {
+     "x": 1462,
+     "y": 48,
+     "w": 448,
+     "h": 252,
+     "side": "right"
+    },
+    "screen": [
+     80,
+     92,
+     738,
+     896
+    ]
+   }
+  ]
+ },
+ "file": "lospollostv-09.mp4"
+}

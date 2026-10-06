@@ -14,9 +14,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <script type="module" crossorigin src="/assets/chrome-CvBQm9er.js"></script>
-  <script type="module" crossorigin src="/assets/live-CsNJSVK1.js"></script>
+  <script type="module" crossorigin src="/assets/preload-helper-ckwbz45p.js"></script>
+  <script type="module" crossorigin src="/assets/live-LVRQ7bmi.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/chrome-BZiqIjL2.css">
-  <link rel="stylesheet" crossorigin href="/assets/live-B8Y6OSsi.css">
+  <link rel="stylesheet" crossorigin href="/assets/live-CvS3BzLZ.css">
 </head>
 <body>
 <main>
@@ -32,6 +33,10 @@
   <section class="lv-board-sec">
     <div class="wrap">
       <div class="lv-counters" id="counters"></div>
+      <div class="lv-show" id="show" hidden>
+        <div class="panel lv-desk"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>the editor · last moment</span><span class="tc" id="desk-tc"></span></div><div class="lv-desk-body" id="desk"></div></div>
+        <div class="panel lv-latest"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>latest cut</span><span class="tc" id="latest-tc"></span></div><div class="lv-latest-body" id="latest"></div></div>
+      </div>
       <div class="lv-board">
         <div class="panel lv-feed">
           <div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>source · <span id="src-name">kick</span></span><span class="tc" id="feed-tc">00:00:00</span></div>
