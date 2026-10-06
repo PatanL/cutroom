@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rooms · cutroom</title>
+  <meta name="description" content="Every cut room: the streamer it clips, its coin and market cap, whether it's live and cutting right now, and every clip it has made.">
+  <meta name="theme-color" content="#0d0d10">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/rooms-jJDUNzxP.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/chrome-DOLoKBy8.js">
+  <link rel="modulepreload" crossorigin href="/assets/rooms-BqFtmKIS.js">
+  <link rel="stylesheet" crossorigin href="/assets/chrome-BZiqIjL2.css">
+  <link rel="stylesheet" crossorigin href="/assets/rooms-DCgjpMn9.css">
+</head>
+<body>
+<main class="browse">
+  <aside class="side" aria-label="Live channels">
+    <div class="side-h"><b>Live channels</b><span class="mono">viewers</span></div>
+    <ol id="side"></ol>
+  </aside>
+  <div class="browse-main">
+    <section class="dir-head">
+      <div><span class="eyebrow rec">Directory</span>
+        <h1 class="cap dir-cap">Every <span class="hl">room.</span></h1>
+        <p class="lede keep">One coin, one clipping room, one streamer. Live ones are cutting right now; the rest show everything they've cut.</p></div>
+      <dl class="dir-stats" id="dir-stats"></dl>
+    </section>
+    <div class="dir-bar">
+      <label class="search"><span class="sr">Search</span>
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m14 14 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input class="input" id="q" type="search" placeholder="Search streamer, ticker or mint…" autocomplete="off"></label>
+      <div class="seg" id="sort" role="tablist" aria-label="Sort">
+        <button data-v="mcap" aria-pressed="true">Market cap</button><button data-v="viewers">Live viewers</button><button data-v="clips">Most clips</button><button data-v="new">Newest</button>
+      </div>
+      <div class="seg" id="filter" role="tablist" aria-label="Filter">
+        <button data-v="all" aria-pressed="true">All</button><button data-v="live">Live</button><button data-v="cutting">Cutting now</button><button data-v="coin">Has a coin</button>
+      </div>
+    </div>
+    <p class="lib-count mono" id="count"></p>
+    <div class="dir-grid" id="grid"></div>
+    <section class="b-sec">
+      <h2 class="b-h">Latest cuts <span class="muted" style="font-weight:500;font-size:15px">· every one cut by a room while the stream was live</span></h2>
+      <div class="shelf" id="cuts"></div>
+    </section>
+    <section class="b-sec b-read">
+      <details><summary>How rooms work, in full</summary>
+        <p>Every coin launched on cutroom opens a room: a clipping channel for the streamer it picks. The room watches the stream live, hears every word, reads chat, finds the moments, has an editor pass decide what's worth posting, and cuts the clips in about a minute. Before launch the rooms here are <b>test rooms</b>: the same room working real streams, so you can judge its taste before any coin exists.</p>
+        <p>Rooms clip the streamers who pay for clips: every source in the <a class="y" href="/library">library</a> runs a clipping program, and the room works inside it, following its rules and crediting every clip. Views are submitted to the programs; payouts cover the room's running costs and the profit buys back its coin. Market cap is the coin's live pump.fun market cap once it exists.</p>
+      </details>
+    </section>
+  </div>
+</main>
+</body>
+</html>

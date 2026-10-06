@@ -9,12 +9,12 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/library-BxJmYKUa.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/chrome-Bhr1zJcL.js">
-  <link rel="modulepreload" crossorigin href="/assets/ui-Cy4u6byC.js">
+  <script type="module" crossorigin src="/assets/library-Cg5apEYW.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/chrome-DOLoKBy8.js">
+  <link rel="modulepreload" crossorigin href="/assets/ui-Dk3q1jcg.js">
   <link rel="modulepreload" crossorigin href="/assets/market-CPOypMFJ.js">
   <link rel="stylesheet" crossorigin href="/assets/chrome-BZiqIjL2.css">
-  <link rel="stylesheet" crossorigin href="/assets/library-DQFdtbZ9.css">
+  <link rel="stylesheet" crossorigin href="/assets/library-DGpPMkJC.css">
 </head>
 <body>
 <main>
@@ -26,31 +26,6 @@
       <dl class="lib-stats" id="lib-stats"></dl>
     </div>
   </section>
-  <section class="mkt-sec">
-    <div class="wrap">
-      <div class="section-head"><div><span class="eyebrow">The market</span><h2 class="h2" style="margin-top:14px">What clipping <em>pays.</em></h2></div>
-        <p class="lede" style="max-width:30em" id="mkt-lede"></p></div>
-      <div class="mkt-grid">
-        <div class="panel"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>rate per 1,000 views · campaigns</span></div><div class="panel-body"><div class="hist" id="hist"></div></div></div>
-        <div class="panel"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>where clips can go · campaigns allowing</span></div><div class="panel-body"><div class="plats" id="plats"></div></div></div>
-      </div>
-      <dl class="mkt-stats" id="mkt-stats"></dl>
-      <div class="panel" style="margin-top:20px"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>streamer campaigns live now · by money spent</span><span class="tc" id="mkt-n"></span></div>
-        <table class="mkt-table"><thead><tr><th>Campaign</th><th>Run by</th><th>Rate</th><th>Spent / budget</th><th>Clippers</th></tr></thead><tbody id="mkt-rows"></tbody></table></div>
-      <div class="panel" style="margin-top:20px"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>Kick's own rate board · USD per 100K views, paid in USDT</span><span class="tc" id="kick-checked"></span></div>
-        <div class="panel-body"><div class="kick-board" id="kick-board"></div>
-        <p class="muted" style="font-size:13px;margin:14px 0 0">Kick funds per-streamer bounties for clips of its streamers through its Kick Clipping campaign on Clipping. <a class="y" id="kick-src" target="_blank" rel="noopener noreferrer">Source ↗</a></p></div></div>
-    </div>
-  </section>
-
-  <section class="net-sec">
-    <div class="wrap">
-      <div class="section-head"><div><span class="eyebrow">The networks</span><h2 class="h2" style="margin-top:14px">Where rooms <em>sell views.</em></h2></div>
-        <p class="lede" style="max-width:30em">The marketplaces and agencies that run clipping programs: how each one checks views, how and when it pays, and how big its clipper community is. A room joins these the way a clipper does.</p></div>
-      <div class="nets" id="nets"></div>
-    </div>
-  </section>
-
   <section class="lib-body">
     <div class="wrap">
       <div class="lib-bar">
@@ -63,6 +38,7 @@
           <div class="chips" id="f-plat" aria-label="Platform"></div>
           <div class="chips" id="f-misc"></div>
           <select class="select" id="sort" aria-label="Sort">
+            <option value="fame">Most followed first</option>
             <option value="conf">Best receipts first</option>
             <option value="rate">Highest rate</option>
             <option value="name">A–Z</option>
@@ -73,6 +49,33 @@
       <p class="lib-count mono" id="count"></p>
       <div class="dossiers" id="list"></div>
       <div class="lib-empty" id="empty" hidden><p class="h2">Nothing <em>matches.</em></p><p class="lede">Try fewer filters.</p></div>
+    </div>
+  </section>
+  <section class="mkt-sec">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow">The market</span><h2 class="h2" style="margin-top:14px">What clipping <em>pays.</em></h2></div>
+        <p class="lede" style="max-width:30em" id="mkt-lede"></p></div>
+      <div class="mkt-grid">
+        <div class="panel"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>rate per 1,000 views · campaigns</span></div><div class="panel-body"><div class="hist" id="hist"></div></div></div>
+        <div class="panel"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>where clips can go · campaigns allowing</span></div><div class="panel-body"><div class="plats" id="plats"></div></div></div>
+      </div>
+      <dl class="mkt-stats" id="mkt-stats"></dl>
+      <div class="panel" style="margin-top:20px"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>streamer campaigns live now · by money spent</span><span class="tc" id="mkt-n"></span></div>
+        <table class="mkt-table"><thead><tr><th>Campaign</th><th>Run by</th><th>Rate</th><th>Spent / budget</th><th>Clippers</th></tr></thead><tbody id="mkt-rows"></tbody></table><button class="show-more" id="mkt-more" type="button" aria-expanded="false">Show more campaigns</button></div>
+      <div class="panel" style="margin-top:20px"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>Kick's own rate board · USD per 100K views, paid in USDT</span><span class="tc" id="kick-checked"></span></div>
+        <div class="panel-body"><div class="kick-board" id="kick-board"></div>
+        <p class="muted" style="font-size:13px;margin:14px 0 0">Kick funds per-streamer bounties for clips of its streamers through its Kick Clipping campaign on Clipping. <a class="y" id="kick-src" target="_blank" rel="noopener noreferrer">Source ↗</a></p></div></div>
+    </div>
+  </section>
+  <section class="net-sec">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow">The networks</span><h2 class="h2" style="margin-top:14px">Where rooms <em>sell views.</em></h2></div>
+        <p class="lede" style="max-width:30em">The marketplaces and agencies that run clipping programs: how each one checks views, how and when it pays, and how big its clipper community is. A room joins these the way a clipper does.</p></div>
+      <details class="nets-fold"><summary>Show all <span id="nets-n"></span> marketplaces and agencies</summary><div class="nets" id="nets"></div></details>
+    </div>
+  </section>
+  <section class="lib-rules">
+    <div class="wrap">
       <div class="policy" id="pol-sec">
         <div class="section-head" style="margin:56px 0 24px"><div><span class="eyebrow">Rules of the road</span><h2 class="h2" style="margin-top:14px">Platforms stopped paying <em>reposts.</em></h2></div>
           <p class="lede" style="max-width:30em">Ad revenue for re-uploaded clips is close to zero everywhere, and pure repost pages lose reach. The money is in the programs, and the reach is in edits that add something. Rooms are built for that.</p></div>
@@ -84,6 +87,8 @@
       </div>
     </div>
   </section>
+
+
 </main>
 </body>
 </html>

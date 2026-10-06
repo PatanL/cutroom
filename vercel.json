@@ -1,12 +1,42 @@
 {
-  "cleanUrls": false,
+  "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
-    { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
-    { "source": "/(.*)\\.mp4", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }] }
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.mp4",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
   ],
   "redirects": [
-    { "source": "/live", "destination": "/live.html", "permanent": false },
-    { "source": "/channels", "destination": "/live.html", "permanent": false }
+    {
+      "source": "/channels",
+      "destination": "/rooms",
+      "permanent": true
+    },
+    {
+      "source": "/room",
+      "destination": "/inside",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/rooms/:slug",
+      "destination": "/channel"
+    }
   ]
 }
