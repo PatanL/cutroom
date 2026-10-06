@@ -1,0 +1,115 @@
+{
+ "id": "tjr-just-stop",
+ "program": "TJR $23,100 Weekly Clipping Campaign (Reach \u00b7 Content Rewards) \u00b7 $0.75 / 1K",
+ "source_url": "https://www.youtube.com/watch?v=X7msxvyQd_U",
+ "hook": "TJR to traders who can't skip ONE day",
+ "post_caption": "If you can't sit out one day, you're not ready \ud83d\udcaf #TJR #trading #daytrading #memecoins",
+ "rules_check": {
+  "features_TJR": true,
+  "platforms": "TikTok, IG Reels, YT Shorts",
+  "hashtag_#TJR": "in post caption",
+  "no_AI": true,
+  "no_logos": "sponsor banner cropped out; no watermark",
+  "not_negative": true,
+  "min_views": "10,000 (MVR)",
+  "submit_within": "30 min of posting"
+ },
+ "duration": 40.9,
+ "timeline": [
+  {
+   "src": [
+    1769.6,
+    1789.7
+   ],
+   "at": 0.0
+  },
+  {
+   "src": [
+    1797.4,
+    1818.2
+   ],
+   "at": 20.100000000000136
+  }
+ ],
+ "render": {
+  "segments": [
+   {
+    "src": [
+     1769.6,
+     1784.57
+    ],
+    "cam": {
+     "x": 1242,
+     "y": 698,
+     "w": 678,
+     "h": 382,
+     "side": "right"
+    },
+    "screen": [
+     540,
+     90,
+     692,
+     840
+    ]
+   },
+   {
+    "src": [
+     1784.57,
+     1785.57
+    ],
+    "cam": {
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "h": 1080,
+     "side": "full"
+    },
+    "screen": [
+     614,
+     90,
+     692,
+     840
+    ]
+   },
+   {
+    "src": [
+     1785.57,
+     1789.7
+    ],
+    "cam": {
+     "x": 0,
+     "y": 698,
+     "w": 678,
+     "h": 382,
+     "side": "left"
+    },
+    "screen": [
+     688,
+     90,
+     692,
+     840
+    ]
+   },
+   {
+    "src": [
+     1797.4,
+     1818.2
+    ],
+    "cam": {
+     "x": 0,
+     "y": 698,
+     "w": 678,
+     "h": 382,
+     "side": "left"
+    },
+    "screen": [
+     688,
+     90,
+     692,
+     840
+    ]
+   }
+  ]
+ },
+ "file": "tjr-just-stop.mp4"
+}

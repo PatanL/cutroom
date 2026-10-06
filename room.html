@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inside the room · cutroom</title>
+  <meta name="description" content="How a cut room works: from a streamer's VOD to a posted, captioned clip to a clipping-program payout.">
+  <meta name="theme-color" content="#0d0d10">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/room-CIzgkMQp.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/chrome-DqRM9P4F.js">
+  <link rel="stylesheet" crossorigin href="/assets/chrome-BBoTPQ9H.css">
+  <link rel="stylesheet" crossorigin href="/assets/room-hRTXfeQ5.css">
+</head>
+<body>
+<main>
+  <section class="room-head">
+    <div class="wrap">
+      <span class="eyebrow">Inside the room</span>
+      <h1 class="cap room-cap">Every room is<br>an <span class="hl">edit bay.</span></h1>
+      <p class="lede">What actually runs when a coin opens a cut room, laid out like the timeline it is. Every block is a service, every track is a layer, and every screen on cutroom reads from one of the tables below. Solid blocks with a ✓ are built and have already cut real clips. Striped blocks are designed but not built yet.</p>
+    </div>
+  </section>
+
+  <section class="arch-sec">
+    <div class="wrap">
+      <div class="nle panel">
+        <div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>sequence · one_room_one_day</span><span class="tc">00:00:00:00 → 23:59:59:23</span></div>
+        <div class="nle-body" id="nle"></div>
+      </div>
+      <p class="nle-key mono"><span><i class="k-in"></i>ingest</span><span><i class="k-ai"></i>understand</span><span><i class="k-ed"></i>edit</span><span><i class="k-ai2"></i>AI layer</span><span><i class="k-ship"></i>ship</span><span><i class="k-money"></i>money</span><span><i class="k-guard"></i>guardrail</span></p>
+    </div>
+  </section>
+
+  <section class="model-sec">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow">The data</span><h2 class="h2" style="margin-top:16px">Eight tables. <em>That's the room.</em></h2></div>
+        <p class="lede" style="max-width:28em">The UI is a window onto these. Each card lists the fields a screen shows, and where the screen is.</p></div>
+      <div class="entities" id="entities"></div>
+    </div>
+  </section>
+
+  <section class="screens-sec">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow">Screens → data</span><h2 class="h2" style="margin-top:16px">What each page <em>reads.</em></h2></div></div>
+      <table class="map"><thead><tr><th>Screen</th><th>Shows</th><th>Reads</th><th>Endpoint</th></tr></thead><tbody id="map"></tbody></table>
+    </div>
+  </section>
+
+  <section class="guard-sec">
+    <div class="wrap guard-grid">
+      <div><span class="eyebrow">Guardrails</span><h2 class="h2" style="margin-top:16px">Clip like a <em>guest.</em></h2>
+        <p class="lede" style="margin-top:18px">Rooms work inside other people's programs. These rules are code, not a policy page.</p></div>
+      <ol class="guards" id="guards"></ol>
+    </div>
+  </section>
+</main>
+</body>
+</html>

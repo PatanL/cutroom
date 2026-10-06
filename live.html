@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live room · cutroom</title>
+  <meta name="description" content="Watch a cut room work live: it watches a stream, reads chat, finds the moment, cuts it and posts it, while you watch.">
+  <meta name="theme-color" content="#0d0d10">
+  <meta property="og:title" content="cutroom · a cut room, working live">
+  <meta property="og:description" content="Watch a cut room clip a real stream: it hears every word, reads chat, finds the moment and cuts it in about a minute.">
+  <meta property="og:image" content="https://cutroom.fun/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/live-Bv-m7rnA.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/chrome-DqRM9P4F.js">
+  <link rel="stylesheet" crossorigin href="/assets/chrome-BBoTPQ9H.css">
+  <link rel="stylesheet" crossorigin href="/assets/live-Wu1a98VW.css">
+</head>
+<body>
+<main>
+  <section class="lv-head">
+    <div class="wrap">
+      <div class="lv-onair" id="onair"><span class="lv-dot"></span><b id="air-word">Connecting</b><span class="mono" id="air-clock">--:--:--</span></div>
+      <h1 class="cap lv-cap">A cut room,<br><span class="hl">working live.</span></h1>
+      <p class="lede">This is one cut room watching one stream right now, on our own machine. It hears every word, reads chat as it scrolls, and decides on its own when something just happened. Then it cuts the clip, captions it and gets it ready to post. Nobody is editing by hand.</p>
+      <div class="lv-watch" id="watch"></div>
+    </div>
+  </section>
+
+  <section class="lv-board-sec">
+    <div class="wrap">
+      <div class="lv-counters" id="counters"></div>
+      <div class="lv-board">
+        <div class="panel lv-feed">
+          <div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>source · <span id="src-name">kick</span></span><span class="tc" id="feed-tc">00:00:00</span></div>
+          <div class="lv-screen"><img id="thumb" alt="Latest frame from the stream" hidden><div class="lv-screen-empty" id="thumb-empty">waiting for the first frame</div><span class="lv-rec"><i></i>REC</span></div>
+          <div class="lv-hear">
+            <div class="lv-label"><span>What the room hears</span><span class="mono" id="tx-meta"></span></div>
+            <ol class="lv-tx" id="tx"></ol>
+          </div>
+        </div>
+
+        <div class="panel lv-signal">
+          <div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>signal · last 5 min</span><span class="tc" id="lag"></span></div>
+          <div class="lv-chart"><canvas id="chart" aria-label="Loudness, chat speed and moment score over the last five minutes"></canvas></div>
+          <p class="lv-key mono"><span><i class="k-loud"></i>loudness</span><span><i class="k-chat"></i>chat msgs/sec</span><span><i class="k-score"></i>moment score</span><span><i class="k-flag"></i>moment</span></p>
+          <p class="lv-explain long">A moment is when the stream gets loud, chat speeds up, people laugh or type “clip it”, all at once. Chat reacts a few seconds late (stream delay plus typing), so the room measures that delay and lines chat up with the audio.</p>
+          <div class="lv-log">
+            <div class="lv-label"><span>Progress log</span><span class="mono" id="log-n"></span></div>
+            <ol class="lv-logl" id="log"></ol>
+          </div>
+        </div>
+
+        <div class="panel lv-cuts">
+          <div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>cut list</span><span class="tc" id="cut-n">0 clips</span></div>
+          <div class="lv-cutlist" id="cuts"><p class="lv-empty">No moments yet. The room needs about two minutes of stream to learn what “normal” sounds like for this streamer.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lv-how-sec">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow">How a live cut works</span><h2 class="h2" style="margin-top:16px">Five stages. <em>Minutes, not days.</em></h2></div>
+        <p class="lede" style="max-width:30em">Every card in the cut list moves through these. Clipping programs pay by views, and views go to whoever posts the moment first.</p></div>
+      <ol class="lv-how" id="how"></ol>
+    </div>
+  </section>
+
+  <section class="lv-money-sec paper-sec">
+    <div class="wrap lv-money">
+      <div><span class="eyebrow">Where the money goes</span><h2 class="h2" style="margin-top:16px">The work already pays. <em>We route it back.</em></h2></div>
+      <div class="lv-money-copy">
+        <p class="lede">Streamers already pay clippers per view through public programs. A cut room does that work and collects those payouts. What's left after costs buys back the room's coin.</p>
+        <ol class="lv-flow mono" id="flow"></ol>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

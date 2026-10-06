@@ -1,0 +1,108 @@
+{
+ "id": "tjr-risk-free",
+ "program": "TJR $23,100 Weekly Clipping Campaign (Reach \u00b7 Content Rewards) \u00b7 $0.75 / 1K",
+ "source_url": "https://www.youtube.com/watch?v=X7msxvyQd_U",
+ "hook": "\"This is a risk-free trade, bro\"",
+ "post_caption": "\"Risk free\" \ud83d\udc80 #TJR #memecoins #trading #crypto",
+ "rules_check": {
+  "features_TJR": true,
+  "platforms": "TikTok, IG Reels, YT Shorts",
+  "hashtag_#TJR": "in post caption",
+  "no_AI": true,
+  "no_logos": "sponsor banner cropped out; no watermark",
+  "not_negative": true,
+  "min_views": "10,000 (MVR)",
+  "submit_within": "30 min of posting"
+ },
+ "duration": 36.7,
+ "timeline": [
+  {
+   "src": [
+    2268.1,
+    2283.6
+   ],
+   "at": 0.0
+  },
+  {
+   "card": "Moments later",
+   "at": 15.5,
+   "dur": 1.0
+  },
+  {
+   "src": [
+    2315.0,
+    2331.9
+   ],
+   "at": 16.5
+  },
+  {
+   "src": [
+    2357.0,
+    2360.3
+   ],
+   "at": 33.40000000000009
+  }
+ ],
+ "render": {
+  "segments": [
+   {
+    "src": [
+     2268.1,
+     2283.6
+    ],
+    "cam": {
+     "x": 0,
+     "y": 698,
+     "w": 678,
+     "h": 382,
+     "side": "left"
+    },
+    "screen": [
+     688,
+     90,
+     692,
+     840
+    ]
+   },
+   {
+    "src": [
+     2315.0,
+     2331.9
+    ],
+    "cam": {
+     "x": 0,
+     "y": 698,
+     "w": 678,
+     "h": 382,
+     "side": "left"
+    },
+    "screen": [
+     688,
+     90,
+     692,
+     840
+    ]
+   },
+   {
+    "src": [
+     2357.0,
+     2360.3
+    ],
+    "cam": {
+     "x": 0,
+     "y": 698,
+     "w": 678,
+     "h": 382,
+     "side": "left"
+    },
+    "screen": [
+     688,
+     90,
+     692,
+     840
+    ]
+   }
+  ]
+ },
+ "file": "tjr-risk-free.mp4"
+}

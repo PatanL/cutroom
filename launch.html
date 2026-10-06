@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open a cut room · cutroom</title>
+  <meta name="description" content="Pick a streamer with a clipping program, pick a style, launch the coin. The room does the rest.">
+  <meta name="theme-color" content="#0d0d10">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/launch-B8Vy9LYu.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/chrome-DqRM9P4F.js">
+  <link rel="modulepreload" crossorigin href="/assets/ui-BUzh3yEQ.js">
+  <link rel="modulepreload" crossorigin href="/assets/market-CPOypMFJ.js">
+  <link rel="stylesheet" crossorigin href="/assets/chrome-BBoTPQ9H.css">
+  <link rel="stylesheet" crossorigin href="/assets/launch-xNd0AHNc.css">
+  <link rel="stylesheet" crossorigin href="/assets/home-vw3AHQ9N.css">
+</head>
+<body>
+<main>
+  <section style="padding-bottom:10px">
+    <div class="wrap">
+      <span class="eyebrow">Open a cut room</span>
+      <h1 class="cap" style="font-size:clamp(56px,8vw,124px);margin:20px 0 22px;font-variation-settings:'wdth' 76">Roll <span class="hl">camera.</span></h1>
+      <p class="lede">Four choices and one signature. The room starts cutting samples right away and goes on air when its coin migrates.</p>
+    </div>
+  </section>
+  <section style="padding-top:34px">
+    <div class="wrap launch-grid">
+      <form class="sheet" id="form" novalidate>
+        <fieldset class="part"><legend><span class="pn mono">01</span>Who does it clip?</legend>
+          <p class="part-lede">Pick up to three sources from the library. Only streamers with an active, verified program can be clipped.</p>
+          <label class="search"><span class="sr">Search sources</span><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m14 14 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><input class="input" id="src-q" type="search" placeholder="Search the library" autocomplete="off"></label>
+          <div class="srcs" id="srcs"></div>
+        </fieldset>
+        <fieldset class="part"><legend><span class="pn mono">02</span>Name the room</legend>
+          <div class="row2">
+            <div><label class="label" for="name">Channel name</label><input class="input" id="name" maxlength="28" placeholder="Late Night Cuts" autocomplete="off"></div>
+            <div><label class="label" for="ticker">Ticker</label><input class="input mono" id="ticker" maxlength="10" placeholder="LATE" autocomplete="off"></div>
+          </div>
+          <p class="hint">Clip pages work best with a name that says what you'll get, not who it is. Don't use a streamer's name as the channel's name.</p>
+        </fieldset>
+        <fieldset class="part"><legend><span class="pn mono">03</span>Pick the cut</legend>
+          <div class="styles" id="styles"></div>
+        </fieldset>
+        <fieldset class="part"><legend><span class="pn mono">04</span>Handles</legend>
+          <p class="part-lede">Claimed when the room goes on air. If one's taken, we'll take the closest free one.</p>
+          <div class="hgrid" id="handles"></div>
+        </fieldset>
+        <fieldset class="part"><legend><span class="pn mono">05</span>Launch</legend>
+          <div class="row2"><div><label class="label" for="buy">First buy <span class="muted">(optional)</span></label><input class="input mono" id="buy" inputmode="decimal" placeholder="0 SOL"></div></div>
+          <label class="check"><input type="checkbox" id="ok1"> <span>The room follows each source's program rules and credits every clip.</span></label>
+          <label class="check"><input type="checkbox" id="ok2"> <span>I understand the coin is a memecoin and clip payouts can stop at any time.</span></label>
+          <button class="btn btn-y launch-btn" type="submit">Open the room <span class="mono" id="go-tk"></span></button>
+          <p class="hint" id="note" style="text-align:center">Preview: launches open when the room service is connected.</p>
+        </fieldset>
+      </form>
+      <aside class="lpreview">
+        <span class="eyebrow">Preview</span>
+        <div class="lp-phone"><div class="phone" id="lp-phone"></div></div>
+        <div id="lp-card"></div>
+        <div class="panel math">
+          <div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>room math</span><span class="tc">illustrative</span></div>
+          <div class="panel-body">
+            <label class="mrow"><span>Clips posted a day</span><input type="range" id="m-clips" min="1" max="20" value="6"><b class="mono" id="m-clips-v"></b></label>
+            <label class="mrow"><span>Views per clip</span><input type="range" id="m-views" min="0" max="20" value="5"><b class="mono" id="m-views-v"></b></label>
+            <label class="mrow"><span>Clips approved</span><input type="range" id="m-ok" min="10" max="100" step="5" value="60"><b class="mono" id="m-ok-v"></b></label>
+            <div class="mout"><span class="muted">Rate</span><b class="mono" id="m-rate"></b></div>
+            <div class="mout big"><span>A month of payouts</span><b class="mono y" id="m-out"></b></div>
+            <p class="muted mnote">Arithmetic, not a forecast: programs cap payouts, reject clips, change rates and end. Rate is the chosen sources' average per-view rate (or the market median), minus a 10% marketplace fee. The room's running costs come out of this, and everything left buys back the coin.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+</body>
+</html>

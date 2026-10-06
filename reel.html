@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The reel · cutroom</title>
+  <meta name="description" content="The cuts a room makes: hooks, word-by-word captions, reframes. Plus what's working on real clip pages.">
+  <meta name="theme-color" content="#0d0d10">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/reel-Ad-SHPrA.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/chrome-DqRM9P4F.js">
+  <link rel="modulepreload" crossorigin href="/assets/ui-BUzh3yEQ.js">
+  <link rel="modulepreload" crossorigin href="/assets/portfolio-Cao4qkID.js">
+  <link rel="stylesheet" crossorigin href="/assets/chrome-BBoTPQ9H.css">
+  <link rel="stylesheet" crossorigin href="/assets/home-vw3AHQ9N.css">
+</head>
+<body>
+<main>
+  <section style="padding-bottom:20px">
+    <div class="wrap">
+      <span class="eyebrow">The reel</span>
+      <h1 class="cap" style="font-size:clamp(56px,8vw,124px);margin:20px 0 22px;font-variation-settings:'wdth' 76">Pick a <span class="hl">cut.</span></h1>
+      <p class="lede">Real cuts first: clips the room pipeline made from real streams, for real paid programs. Below them are the style presets, each modeled on stream clips with millions of views.</p>
+    </div>
+  </section>
+  <section class="real-sec" id="real" style="padding-top:24px">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow rec">Real cuts · real programs</span><h2 class="h2" style="margin-top:14px">Cut from a real stream, <em>made to get paid.</em></h2></div>
+        <p class="lede" style="max-width:30em">Made by the room pipeline from TJR's 2026-09-27 stream, for the TJR campaign on Content Rewards ($0.75 per 1K views). Real footage, his real voice, no AI (the campaign bans it), no logos, #TJR in the caption.</p></div>
+      <div class="real-grid" id="real-grid"></div>
+    </div>
+  </section>
+
+  <section style="padding-top:24px">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow">Style presets</span><h2 class="h2" style="margin-top:14px">Six cuts, <em>plus Toon.</em></h2></div></div>
+      <div class="reel-grid" id="reel"></div>
+    </div>
+  </section>
+  <section class="ai-sec">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow">The AI layer · researched</span><h2 class="h2" style="margin-top:14px">What AI edits of streamers <em>actually do.</em></h2></div>
+        <p class="lede" style="max-width:30em">The formats that work right now, with their biggest examples and how the streamers reacted. A room only adds an AI layer where the program allows it. TJR's, for one, bans AI outright.</p></div>
+      <div class="ai-grid" id="ai"></div>
+    </div>
+  </section>
+
+  <section class="study-sec">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow">How real clips are built</span><h2 class="h2" style="margin-top:14px">We studied the ones <em>that worked.</em></h2></div>
+        <p class="lede" style="max-width:28em">Every preset above is modeled on real stream clips with millions of views: their layouts, caption styles, and how they credit the source. Here's the breakdown and the full list, linked to the originals.</p></div>
+      <div class="tally">
+        <div class="panel"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>layout</span></div><div class="panel-body" id="tally-layout"></div></div>
+        <div class="panel"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>captions</span></div><div class="panel-body" id="tally-caps"></div></div>
+        <div class="panel"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>credit on screen</span></div><div class="panel-body" id="tally-credit"></div></div>
+      </div>
+      <div class="panel" style="margin-top:16px"><div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>the reference set</span><span class="tc" id="studied-n"></span></div>
+        <table class="studied"><thead><tr><th>Clip</th><th>Views</th><th>Length</th><th>Layout</th><th>Captions</th></tr></thead><tbody id="studied"></tbody></table></div>
+      <p class="muted" style="font-size:13px;margin-top:14px">What carries over: most clips run 15–40 seconds. The first frame names the moment, either in a hook box or with one huge word. Captions sit in the middle of the frame, not at the bottom where the UI covers them. Gaming keeps the facecam in view. The best pages credit the source on screen.</p>
+    </div>
+  </section>
+
+  <section class="ref-sec" id="ref-sec" hidden>
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow">What's working out there</span><h2 class="h2" style="margin-top:14px">Clipping, <em>at scale.</em></h2></div>
+        <p class="lede" style="max-width:26em">What paid clipping has done for streamers, from the programs' own numbers and the press. Every figure links to its source. Rooms aim at this, inside the same programs.</p></div>
+      <div class="refs" id="refs"></div>
+    </div>
+  </section>
+</main>
+<style>
+  .reel-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(20px, 3vw, 40px); }
+  @media (max-width: 900px) { .reel-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .reel-grid { grid-template-columns: 1fr; } .cut .phone { max-width: 300px; } }
+  .cut { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .cut-meta { display: grid; gap: 10px; }
+  .cut-h { display: flex; justify-content: space-between; align-items: baseline; }
+  .cut-h b { font-size: 18px; } .cut-h .mono { color: var(--text-3); font-size: 13px; }
+  .cut dl { margin: 0; display: grid; gap: 8px; }
+  .cut dt { font: 600 10.5px var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--text-3); }
+  .cut dd { margin: 2px 0 0; font-size: 14px; color: var(--text-2); }
+  .ref-sec { background: var(--ink-2); }
+  .real-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(18px, 2.5vw, 32px); }
+  @media (max-width: 900px) { .real-grid { grid-template-columns: 1fr; max-width: 380px; } }
+  .real { display: grid; gap: 14px; }
+  .real video { width: 100%; aspect-ratio: 9/16; border-radius: 22px; background: #000; box-shadow: 0 0 0 6px #1b1b20, 0 0 0 7px #2a2a31, var(--shadow); }
+  .real-meta { display: grid; gap: 6px; }
+  .real-meta b { font-size: 17px; }
+  .real-meta .mono { font-size: 12px; color: var(--text-3); }
+  .real-meta .src a { color: var(--yellow); }
+  .checks { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .checks li { font: 600 11px var(--f-mono); text-transform: uppercase; letter-spacing: .06em; padding: 3px 8px; border-radius: 6px; background: var(--green-wash); color: var(--green); }
+  .checks li::before { content: '✓ '; }
+  .cap-post { margin: 2px 0 0; font-size: 13.5px; color: var(--text-2); }
+  .ai-sec { background: linear-gradient(180deg, rgba(183,156,255,.06), transparent); }
+  .ai-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+  .ait { background: var(--panel); border: 1px solid rgba(183,156,255,.22); border-radius: var(--r); padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+  .ait-h { display: flex; justify-content: space-between; gap: 10px; align-items: center; } .ait-h b { font-size: 16px; }
+  .ait p { margin: 0; font-size: 13.5px; color: var(--text-2); line-height: 1.45; }
+  .ait-ex { font-size: 13.5px; text-decoration: none; color: var(--text); } .ait-ex:hover { text-decoration: underline; }
+  .ait-r { display: flex; flex-wrap: wrap; gap: 6px; }
+  .ait-t { margin-top: auto; font-size: 11.5px; color: var(--text-3); }
+  .modeled { display: grid; gap: 4px; }
+  .modeled a { font-size: 13.5px; text-decoration: none; color: var(--text-2); }
+  .modeled a:hover { color: var(--text); text-decoration: underline; }
+  .tally { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  @media (max-width: 900px) { .tally { grid-template-columns: 1fr; } }
+  .tb { display: grid; grid-template-columns: 130px 1fr 28px; gap: 10px; align-items: center; font-size: 13.5px; padding: 4px 0; }
+  .tb .track { height: 8px; border-radius: 9px; background: var(--track); overflow: hidden; }
+  .tb .track i { display: block; height: 100%; background: var(--yellow); }
+  .tb .mono { text-align: right; color: var(--text-2); font-size: 12.5px; }
+  .studied { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .studied th { text-align: left; font: 600 10.5px var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--text-3); padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  .studied td { padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .studied a { text-decoration: none; } .studied a:hover b { text-decoration: underline; }
+  @media (max-width: 760px) { .studied th:nth-child(3), .studied td:nth-child(3), .studied th:nth-child(5), .studied td:nth-child(5) { display: none; } }
+  .refs { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+  .ref { display: grid; gap: 6px; padding: 16px; border-radius: var(--r); background: var(--panel); border: 1px solid var(--line); text-decoration: none; }
+  .ref:hover { border-color: var(--yellow); }
+  .ref-p { font-size: 11px; color: var(--text-3); text-transform: uppercase; letter-spacing: .1em; }
+  .ref b { font-size: 16px; }
+  .ref-big { font-size: 40px; font-weight: 600; letter-spacing: -0.03em; line-height: 1; margin-top: 6px; }
+  .ref-unit { font-size: 12px; color: var(--text-3); margin-top: -4px; }
+  .ref-src { font-size: 13px; color: var(--text-2); }
+  .ref-v { font-size: 12.5px; color: var(--text-3); }
+</style>
+</body>
+</html>
