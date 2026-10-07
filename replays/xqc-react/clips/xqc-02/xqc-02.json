@@ -1,0 +1,47 @@
+{
+ "id": "xqc-02",
+ "program": "Kick Clipping (clipping.net) bounty",
+ "source_url": "https://kick.com/xqc",
+ "hook": "xQc roasts a cheetah print pimp in GTA \ud83d\ude02",
+ "post_caption": "Cheetah pimp? Get the hell out of here \ud83d\ude02 #xqc #kick #gta",
+ "rules_check": {
+  "source": "live Kick stream",
+  "credit_on_screen": true,
+  "no_ai_video": true,
+  "no_botting": true
+ },
+ "duration": 13.0,
+ "timeline": [
+  {
+   "src": [
+    1.49,
+    14.49
+   ],
+   "at": 0.0
+  }
+ ],
+ "render": {
+  "segments": [
+   {
+    "src": [
+     1.49,
+     14.49
+    ],
+    "cam": {
+     "x": 0,
+     "y": 34,
+     "w": 444,
+     "h": 250,
+     "side": "left"
+    },
+    "screen": [
+     588,
+     92,
+     738,
+     896
+    ]
+   }
+  ]
+ },
+ "file": "xqc-02.mp4"
+}

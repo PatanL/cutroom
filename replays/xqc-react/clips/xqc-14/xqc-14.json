@@ -1,0 +1,47 @@
+{
+ "id": "xqc-14",
+ "program": "Kick Clipping (clipping.net) bounty",
+ "source_url": "https://kick.com/xqc",
+ "hook": "xQc watches Ubisoft's DRM get cracked in two weeks \ud83d\ude02",
+ "post_caption": "Pirates set sail, paying customers get booted #xqc #kick",
+ "rules_check": {
+  "source": "live Kick stream",
+  "credit_on_screen": true,
+  "no_ai_video": true,
+  "no_botting": true
+ },
+ "duration": 31.0,
+ "timeline": [
+  {
+   "src": [
+    1.08,
+    32.08
+   ],
+   "at": 0.0
+  }
+ ],
+ "render": {
+  "segments": [
+   {
+    "src": [
+     1.08,
+     32.08
+    ],
+    "cam": {
+     "x": 0,
+     "y": 52,
+     "w": 444,
+     "h": 250,
+     "side": "left"
+    },
+    "screen": [
+     596,
+     92,
+     738,
+     896
+    ]
+   }
+  ]
+ },
+ "file": "xqc-14.mp4"
+}

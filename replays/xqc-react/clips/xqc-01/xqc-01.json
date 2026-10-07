@@ -1,0 +1,47 @@
+{
+ "id": "xqc-01",
+ "program": "Kick Clipping (clipping.net) bounty",
+ "source_url": "https://kick.com/xqc",
+ "hook": "xQc cracks up at Hacker Speed \ud83d\ude02",
+ "post_caption": "Let me do my mathematics goddammit #xqc #kick #gta",
+ "rules_check": {
+  "source": "live Kick stream",
+  "credit_on_screen": true,
+  "no_ai_video": true,
+  "no_botting": true
+ },
+ "duration": 24.65,
+ "timeline": [
+  {
+   "src": [
+    1.53,
+    26.18
+   ],
+   "at": 0.0
+  }
+ ],
+ "render": {
+  "segments": [
+   {
+    "src": [
+     1.53,
+     26.18
+    ],
+    "cam": {
+     "x": 0,
+     "y": 34,
+     "w": 444,
+     "h": 250,
+     "side": "left"
+    },
+    "screen": [
+     588,
+     92,
+     738,
+     896
+    ]
+   }
+  ]
+ },
+ "file": "xqc-01.mp4"
+}

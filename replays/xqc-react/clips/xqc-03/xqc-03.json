@@ -1,0 +1,47 @@
+{
+ "id": "xqc-03",
+ "program": "Kick Clipping (clipping.net) bounty",
+ "source_url": "https://kick.com/xqc",
+ "hook": "Speed asks her to get burgers tonight \ud83d\ude2d",
+ "post_caption": "ask my boyfriend sitting directly next to me \ud83d\udc80 #xqc #kick #gta",
+ "rules_check": {
+  "source": "live Kick stream",
+  "credit_on_screen": true,
+  "no_ai_video": true,
+  "no_botting": true
+ },
+ "duration": 27.09,
+ "timeline": [
+  {
+   "src": [
+    1.11,
+    28.2
+   ],
+   "at": 0.0
+  }
+ ],
+ "render": {
+  "segments": [
+   {
+    "src": [
+     1.11,
+     28.2
+    ],
+    "cam": {
+     "x": 0,
+     "y": 40,
+     "w": 444,
+     "h": 250,
+     "side": "left"
+    },
+    "screen": [
+     444,
+     92,
+     738,
+     896
+    ]
+   }
+  ]
+ },
+ "file": "xqc-03.mp4"
+}

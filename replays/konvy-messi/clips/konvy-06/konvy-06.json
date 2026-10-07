@@ -1,0 +1,47 @@
+{
+ "id": "konvy-06",
+ "program": "Kick Clipping (clipping.net) bounty",
+ "source_url": "https://kick.com/konvy",
+ "hook": "Konvy reacts to a Messi tribute on TikTok \ud83e\udd79",
+ "post_caption": "MESSI FAREWELL I MIGHT CRY NOOOOOO #konvy #kick #irl",
+ "rules_check": {
+  "source": "live Kick stream",
+  "credit_on_screen": true,
+  "no_ai_video": true,
+  "no_botting": true
+ },
+ "duration": 22.03,
+ "timeline": [
+  {
+   "src": [
+    1.26,
+    23.29
+   ],
+   "at": 0.0
+  }
+ ],
+ "render": {
+  "segments": [
+   {
+    "src": [
+     1.26,
+     23.29
+    ],
+    "cam": {
+     "x": 1488,
+     "y": 12,
+     "w": 140,
+     "h": 78,
+     "side": "right"
+    },
+    "screen": [
+     584,
+     92,
+     738,
+     896
+    ]
+   }
+  ]
+ },
+ "file": "konvy-06.mp4"
+}

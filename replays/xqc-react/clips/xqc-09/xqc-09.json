@@ -1,0 +1,47 @@
+{
+ "id": "xqc-09",
+ "program": "Kick Clipping (clipping.net) bounty",
+ "source_url": "https://kick.com/xqc",
+ "hook": "xQc's police chase: PIT, PIT, PIT \ud83d\udd25",
+ "post_caption": "762 PIT, PIT, PIT #xqc #kick #gta",
+ "rules_check": {
+  "source": "live Kick stream",
+  "credit_on_screen": true,
+  "no_ai_video": true,
+  "no_botting": true
+ },
+ "duration": 25.75,
+ "timeline": [
+  {
+   "src": [
+    1.86,
+    27.61
+   ],
+   "at": 0.0
+  }
+ ],
+ "render": {
+  "segments": [
+   {
+    "src": [
+     1.86,
+     27.61
+    ],
+    "cam": {
+     "x": 0,
+     "y": 48,
+     "w": 444,
+     "h": 250,
+     "side": "left"
+    },
+    "screen": [
+     589,
+     92,
+     738,
+     896
+    ]
+   }
+  ]
+ },
+ "file": "xqc-09.mp4"
+}

@@ -1,0 +1,47 @@
+{
+ "id": "konvy-09",
+ "program": "Kick Clipping (clipping.net) bounty",
+ "source_url": "https://kick.com/konvy",
+ "hook": "Konvy reads Kay Flock's updated release date live \ud83d\ude33",
+ "post_caption": "Wait, what the f**k? Free him #konvy #kick #irl",
+ "rules_check": {
+  "source": "live Kick stream",
+  "credit_on_screen": true,
+  "no_ai_video": true,
+  "no_botting": true
+ },
+ "duration": 17.0,
+ "timeline": [
+  {
+   "src": [
+    2.64,
+    19.64
+   ],
+   "at": 0.0
+  }
+ ],
+ "render": {
+  "segments": [
+   {
+    "src": [
+     2.64,
+     19.64
+    ],
+    "cam": {
+     "x": 1488,
+     "y": 12,
+     "w": 214,
+     "h": 120,
+     "side": "right"
+    },
+    "screen": [
+     540,
+     92,
+     738,
+     896
+    ]
+   }
+  ]
+ },
+ "file": "konvy-09.mp4"
+}

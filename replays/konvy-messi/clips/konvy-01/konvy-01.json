@@ -1,0 +1,47 @@
+{
+ "id": "konvy-01",
+ "program": "Kick Clipping (clipping.net) bounty",
+ "source_url": "https://kick.com/konvy",
+ "hook": "Konvy watches Messi's final letter and gets emotional \ud83e\udd79",
+ "post_caption": "It's coming to an end, bro #konvy #kick #irl",
+ "rules_check": {
+  "source": "live Kick stream",
+  "credit_on_screen": true,
+  "no_ai_video": true,
+  "no_botting": true
+ },
+ "duration": 23.95,
+ "timeline": [
+  {
+   "src": [
+    3.62,
+    27.57
+   ],
+   "at": 0.0
+  }
+ ],
+ "render": {
+  "segments": [
+   {
+    "src": [
+     3.62,
+     27.57
+    ],
+    "cam": {
+     "x": 1480,
+     "y": 0,
+     "w": 234,
+     "h": 132,
+     "side": "right"
+    },
+    "screen": [
+     592,
+     92,
+     738,
+     896
+    ]
+   }
+  ]
+ },
+ "file": "konvy-01.mp4"
+}

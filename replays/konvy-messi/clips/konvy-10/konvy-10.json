@@ -1,0 +1,161 @@
+{
+ "id": "konvy-10",
+ "program": "Kick Clipping (clipping.net) bounty",
+ "source_url": "https://kick.com/konvy",
+ "hook": "Konvy watches a Messi farewell clip in his Argentina jersey \ud83e\udd79",
+ "post_caption": "no quiero que nunca se vaya \ud83e\udd79 #konvy #messi #argentina",
+ "rules_check": {
+  "source": "live Kick stream",
+  "credit_on_screen": true,
+  "no_ai_video": true,
+  "no_botting": true
+ },
+ "duration": 25.11,
+ "timeline": [
+  {
+   "src": [
+    1.05,
+    26.16
+   ],
+   "at": 0.0
+  }
+ ],
+ "render": {
+  "segments": [
+   {
+    "src": [
+     1.05,
+     1.18
+    ],
+    "cam": {
+     "x": 1242,
+     "y": 698,
+     "w": 678,
+     "h": 382,
+     "side": "right"
+    },
+    "screen": [
+     540,
+     90,
+     692,
+     840
+    ]
+   },
+   {
+    "src": [
+     1.18,
+     11.65
+    ],
+    "cam": {
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "h": 1080,
+     "side": "full"
+    },
+    "screen": [
+     614,
+     90,
+     692,
+     840
+    ]
+   },
+   {
+    "src": [
+     11.65,
+     13.93
+    ],
+    "cam": {
+     "x": 1242,
+     "y": 698,
+     "w": 678,
+     "h": 382,
+     "side": "right"
+    },
+    "screen": [
+     540,
+     90,
+     692,
+     840
+    ]
+   },
+   {
+    "src": [
+     13.93,
+     22.65
+    ],
+    "cam": {
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "h": 1080,
+     "side": "full"
+    },
+    "screen": [
+     614,
+     90,
+     692,
+     840
+    ]
+   },
+   {
+    "src": [
+     22.65,
+     22.71
+    ],
+    "cam": {
+     "x": 1242,
+     "y": 698,
+     "w": 678,
+     "h": 382,
+     "side": "right"
+    },
+    "screen": [
+     540,
+     90,
+     692,
+     840
+    ]
+   },
+   {
+    "src": [
+     22.71,
+     23.81
+    ],
+    "cam": {
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "h": 1080,
+     "side": "full"
+    },
+    "screen": [
+     614,
+     90,
+     692,
+     840
+    ]
+   },
+   {
+    "src": [
+     23.81,
+     26.16
+    ],
+    "cam": {
+     "x": 1242,
+     "y": 698,
+     "w": 678,
+     "h": 382,
+     "side": "right"
+    },
+    "screen": [
+     540,
+     90,
+     692,
+     840
+    ]
+   }
+  ]
+ },
+ "file": "konvy-10.mp4"
+}
