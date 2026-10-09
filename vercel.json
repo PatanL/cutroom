@@ -42,6 +42,10 @@
     {
       "source": "/rooms/:slug",
       "destination": "/channel"
+    },
+    {
+      "source": "/coin/:mint",
+      "destination": "/channel"
     }
   ]
 }

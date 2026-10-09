@@ -15,13 +15,14 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/launch-CqZnlXIZ.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/chrome-osEISA13.js">
+  <script type="module" crossorigin src="/assets/launch-C7A8zFTB.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/chrome-CNxf_vqa.js">
   <link rel="modulepreload" crossorigin href="/assets/data-BlHkaDoh.js">
-  <link rel="modulepreload" crossorigin href="/assets/ui-eu139tCC.js">
+  <link rel="modulepreload" crossorigin href="/assets/ui-CNNSNi9K.js">
   <link rel="modulepreload" crossorigin href="/assets/stylereel-BqJe5bLe.js">
-  <link rel="stylesheet" crossorigin href="/assets/chrome-CEhWx338.css">
-  <link rel="stylesheet" crossorigin href="/assets/launch-BdwtUHTO.css">
+  <link rel="modulepreload" crossorigin href="/assets/launchapi-BXK3P0J3.js">
+  <link rel="stylesheet" crossorigin href="/assets/chrome-Dglelo8v.css">
+  <link rel="stylesheet" crossorigin href="/assets/launch-Dam8Dxwv.css">
   <link rel="stylesheet" crossorigin href="/assets/home-DJ3xA8fO.css">
 </head>
 <body>
@@ -56,11 +57,13 @@
           <div class="hgrid" id="handles"></div>
         </fieldset>
         <fieldset class="part"><legend><span class="pn mono">05</span>Launch</legend>
-          <div class="row2"><div><label class="label" for="buy">First buy <span class="muted">(optional)</span></label><input class="input mono" id="buy" inputmode="decimal" placeholder="0 SOL"></div></div>
-          <label class="check"><input type="checkbox" id="ok1"> <span>The room follows each source's program rules and credits every clip.</span></label>
-          <label class="check"><input type="checkbox" id="ok2"> <span>I understand the coin is a memecoin and clip payouts can stop at any time.</span></label>
-          <button class="btn btn-y launch-btn" type="submit">Open the room <span class="mono" id="go-tk"></span></button>
-          <p class="hint" id="note" style="text-align:center">Preview: launches open when the room service is connected.</p>
+          <div class="row2">
+            <div><label class="label" for="buy">First buy <span class="muted">(optional)</span></label><input class="input mono" id="buy" inputmode="decimal" placeholder="0 SOL"></div>
+            <div><label class="label" for="img">Coin image <span class="muted">(optional)</span></label><label class="input img-pick" for="img"><span id="img-name">PNG, JPG or WebP · 1 MB</span><input type="file" id="img" accept="image/png,image/jpeg,image/webp" hidden></label></div>
+          </div>
+          <button class="btn btn-y launch-btn" type="submit" id="go">Launch the room <span class="mono" id="go-tk"></span></button>
+          <p class="hint" id="note" style="text-align:center">Your wallet signs one transaction: the coin launches on Meteora, and the first buy (if any) lands before anyone else can trade.</p>
+          <div class="launched" id="launched" hidden></div>
         </fieldset>
       </form>
       <aside class="lpreview">
