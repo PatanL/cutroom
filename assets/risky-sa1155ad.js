@@ -1,1 +1,0 @@
-const e=[".tjr.him","_tjrtrades","akademiks","clavicular","deenthegreat","iceposeidon","jackdoherty","kingclavicular","livesneako","livewithclav","mizkif","realmizkif","sneako","trainwreckstv"];export{e as R};
