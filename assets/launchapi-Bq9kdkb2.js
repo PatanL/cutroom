@@ -1,0 +1,1 @@
+const p="https://api.hookrs.fun/cutroom".replace(/\/$/,""),r=o=>/^[1-9A-HJ-NP-Za-km-z]{32,44}$/.test(o||""),a=o=>`/rooms/${o}`,t="pump",e=(o,s=t)=>s==="meteora"?`https://jup.ag/tokens/${o}`:`https://pump.fun/coin/${o}`;export{p as L,e as b,r as i,a as r};

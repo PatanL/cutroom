@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edit Bay · cutroom</title>
+  <meta name="description" content="Watch a cut room edit: every cut is a full edit decision list. See what it found, what it kept, how it framed it, and the techniques behind each edit.">
+  <meta name="theme-color" content="#0d0d10">
+  <meta property="og:title" content="cutroom · watch it edit">
+  <meta property="og:description" content="Every cut a room makes is a full edit decision list. Here it is played back, step by step.">
+  <meta property="og:image" content="https://cutroom.fun/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/edit-DHLKc5CU.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/chrome-Cj0vY1oM.js">
+  <link rel="modulepreload" crossorigin href="/assets/editbay-D3q0wCK2.js">
+  <link rel="stylesheet" crossorigin href="/assets/chrome-Dglelo8v.css">
+  <link rel="stylesheet" crossorigin href="/assets/editbay-BnCX3pRg.css">
+  <link rel="stylesheet" crossorigin href="/assets/edit-D7XQdQ9w.css">
+</head>
+<body>
+<main>
+  <section class="ed-head">
+    <div class="wrap">
+      <span class="eyebrow">The edit bay</span>
+      <h1 class="cap ed-cap">Watch it <span class="hl">edit.</span></h1>
+      <p class="lede">Every cut a room makes is a full edit decision list: what it found, what it kept, how it framed it, what it put on screen and why. Nobody edits by hand, so here is that list, played back.</p>
+    </div>
+  </section>
+
+  <section class="ed-sec">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow rec">From the live room</span><h2 class="h2" style="margin-top:16px">One cut, <em>step by step.</em></h2></div>
+        <p class="lede" style="max-width:30em">The room's own record of its latest cut, replayed. When a room is on air this is the cut it just made. <a href="/live">Watch it live →</a></p></div>
+      <div id="editbay" hidden></div>
+    </div>
+  </section>
+
+  <section class="rp-sec" id="replay">
+    <div class="wrap">
+      <div class="section-head" style="margin-bottom:22px"><div><span class="eyebrow">Studio edits</span><h2 class="h2" style="margin-top:16px">Every layer, <em>on the timeline.</em></h2></div>
+        <p class="lede" style="max-width:30em">The hype edits are cut from the same real footage. Each one is a plan: every shot, speed ramp, effect, hit, caption and beat. Press play and the plan runs next to the video, track by track.</p></div>
+      <div class="rp-tabs" role="tablist" id="tabs"></div>
+      <div class="rp-board">
+        <div class="rp-left">
+          <div class="phone" id="phone">
+            <video id="vid" playsinline muted preload="auto"></video>
+            <button class="rp-bigplay" id="bigplay" aria-label="Play"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></i></button>
+            <div class="rp-prog"><i id="prog"></i></div>
+          </div>
+          <div class="rp-ctl">
+            <button class="btn btn-y" id="play" aria-label="Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button>
+            <span class="tc" id="tc">00:00:00</span>
+            <span class="rp-rate" id="rate" aria-label="Playback speed"><button data-r="1" aria-pressed="true">1x</button><button data-r="0.5">0.5x</button><button data-r="0.25">0.25x</button></span>
+            <button class="btn" id="snd" aria-pressed="false">Sound off</button>
+          </div>
+          <p class="rp-credit" id="credit"></p>
+        </div>
+        <div class="rp-right">
+          <div class="panel rp-nle">
+            <div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span id="planname">timeline</span><span class="tc" id="tc2">00:00:00</span></div>
+            <div class="rp-tl" id="tl"></div>
+            <div class="rp-tl-foot"><span>Click any clip on the timeline to jump there.</span><span class="sp"></span><span class="rp-zoom" id="zoom"><button data-z="fit" aria-pressed="true">fit</button><button data-z="2">2x</button><button data-z="4">4x</button></span></div>
+          </div>
+          <div class="panel rp-now">
+            <div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>right now</span><span class="rp-beat" id="beat"><i></i><span>beat</span></span><span class="tc" id="shotno"></span></div>
+            <ul id="now"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="rp-facts" id="facts"></div>
+      <p class="rp-made" id="made"></p>
+    </div>
+  </section>
+
+  <section id="buildup">
+    <div class="wrap">
+      <div class="section-head">
+        <div><span class="eyebrow">Build-up</span><h2 class="h2" style="margin-top:16px">Three seconds, <em>six passes.</em></h2></div>
+        <p class="lede">The same window of the edit above, rendered six times from copies of its plan with layers taken away: the raw stream first, the finished edit last. They loop together, frame for frame.</p>
+      </div>
+      <div class="bu-grid" id="bu"></div>
+      <div class="bu-bar"><span id="bu-win"></span><span class="sp"></span><button class="btn" id="bu-play">Pause</button><button class="btn" id="bu-slow" aria-pressed="false">Half speed</button></div>
+    </div>
+  </section>
+
+  <section id="playbook">
+    <div class="wrap">
+      <div class="section-head">
+        <div><span class="eyebrow">The playbook</span><h2 class="h2" style="margin-top:16px">What we know about editing, <em>counted.</em></h2></div>
+        <p class="lede">The working version of our editing playbook: what the top edit pages do, measured, and what our lab tested on real footage. Every number here is counted from the files. Three findings are open below. Most of it stays in-house.</p>
+      </div>
+      <div class="pb-counts" id="pb-counts"></div>
+      <div class="pb-h3"><h3>Three open findings</h3><p>Before and after, from our own A/B renders.</p></div>
+      <div class="pb-open" id="pb-open"></div>
+      <div class="pb-h3"><h3>Locked</h3><p>Titles only. The methods stay in-house.</p></div>
+      <div class="pb-locked" id="pb-locked"></div>
+      <p class="pb-honest"><b>How to read the scores.</b> The stop-scroll and crispness scores come from a model judge looking at frames, asked twice with the two versions swapped; our critic is another model. They are how we decide what ships, not view counts, and the lab notes list their noise and caveats. Footage is real stream footage, credited to the streamer.</p>
+    </div>
+  </section>
+</main>
+<div class="wrap ed-foot" id="foot"></div>
+</body>
+</html>
