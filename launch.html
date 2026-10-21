@@ -15,15 +15,14 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/launch-C44GeT3Q.js"></script>
+  <script type="module" crossorigin src="/assets/launch-Bji-SrMD.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/chrome-CVbVCWyU.js">
   <link rel="modulepreload" crossorigin href="/assets/data-BWH9yrXC.js">
   <link rel="modulepreload" crossorigin href="/assets/ui-CzHImyIC.js">
-  <link rel="modulepreload" crossorigin href="/assets/market-CPOypMFJ.js">
   <link rel="modulepreload" crossorigin href="/assets/stylereel-BqJe5bLe.js">
   <link rel="modulepreload" crossorigin href="/assets/launchapi-Bq9kdkb2.js">
   <link rel="stylesheet" crossorigin href="/assets/chrome-Cd6OWNvm.css">
-  <link rel="stylesheet" crossorigin href="/assets/launch-CjNZXfJc.css">
+  <link rel="stylesheet" crossorigin href="/assets/launch-wCAx8uwj.css">
   <link rel="stylesheet" crossorigin href="/assets/home-DkEHB4Ce.css">
 </head>
 <body>
@@ -63,7 +62,7 @@
         <fieldset class="part"><legend><span class="pn mono">05</span>Launch</legend>
           <div class="row2">
             <div><label class="label" for="buy">First buy <span class="muted">(optional)</span></label><input class="input mono" id="buy" inputmode="decimal" placeholder="0 SOL"></div>
-            <div><label class="label" for="img">Coin image <span class="muted">(optional)</span></label><label class="input img-pick" for="img"><span id="img-name">PNG, JPG or WebP · 1 MB</span><input type="file" id="img" accept="image/png,image/jpeg,image/webp" hidden></label></div>
+            <div><label class="label" for="img">Coin image <span class="muted">(optional)</span></label><label class="input img-pick" for="img"><span id="img-name">PNG, JPG or WebP</span><input type="file" id="img" accept="image/png,image/jpeg,image/webp" hidden></label></div>
           </div>
           <button class="btn btn-y launch-btn" type="submit" id="go">Launch the room <span class="mono" id="go-tk"></span></button>
           <p class="hint" id="note" style="text-align:center">Your wallet signs one transaction: the coin launches, and the first buy (if any) lands before anyone else can trade.</p>
@@ -75,17 +74,6 @@
         <div class="lp-phone"><div class="phone sp-real" id="lp-phone"></div></div>
         <p class="mono lp-note" id="lp-note"></p>
         <div id="lp-card"></div>
-        <div class="panel math">
-          <div class="panel-bar"><span class="dots"><i></i><i></i><i></i></span><span>room math</span><span class="tc">illustrative</span></div>
-          <div class="panel-body">
-            <label class="mrow"><span>Clips posted a day</span><input type="range" id="m-clips" min="1" max="20" value="6"><b class="mono" id="m-clips-v"></b></label>
-            <label class="mrow"><span>Views per clip</span><input type="range" id="m-views" min="0" max="20" value="5"><b class="mono" id="m-views-v"></b></label>
-            <label class="mrow"><span>Clips approved</span><input type="range" id="m-ok" min="10" max="100" step="5" value="60"><b class="mono" id="m-ok-v"></b></label>
-            <div class="mout"><span class="muted">Rate</span><b class="mono" id="m-rate"></b></div>
-            <div class="mout big"><span>A month of payouts</span><b class="mono y" id="m-out"></b></div>
-            <p class="muted mnote">Arithmetic, not a forecast: programs cap payouts, reject clips, change rates and end. Rate is the chosen sources' average per-view rate (or the market median), minus a 10% marketplace fee. The room's running costs come out of this, and everything left buys back the coin.</p>
-          </div>
-        </div>
       </aside>
     </div>
   </section>
