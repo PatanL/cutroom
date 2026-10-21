@@ -1,0 +1,5 @@
+/channels /rooms 301
+/room /inside 301
+/reel /styles 301
+/rooms/:slug /channel 200
+/coin/:mint /channel 200
